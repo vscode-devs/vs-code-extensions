@@ -1,4 +1,4 @@
-# vscode-extension-demo README
+# ms-vs-extensions.vs-code-extensions
 
 苏木的vscode测试扩展
 
