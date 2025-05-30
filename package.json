@@ -25,7 +25,15 @@
           "group": "navigation"
         }
       ]
-    }
+    },
+    "keybindings": [
+      {
+        "command": "vscode-extension-demo.helloWorld",
+        "key": "ctrl+alt+f10",
+        "mac": "cmd+alt+f10",
+        "when": "editorTextFocus"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
