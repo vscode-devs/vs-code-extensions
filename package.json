@@ -1,19 +1,25 @@
 {
   "name": "vscode-extension-demo",
-  "displayName": "vscode-extension-demo",
-  "description": "vscode-extension-demo",
+  "displayName": "苏木的VSCode扩展demo",
+  "description": "这是一个VSCode扩展的示例。",
+  "keywords": ["vscode", "plugin", "demo"],
   "version": "0.0.1",
+  "publisher": "sumu",
   "repository": {
 	"type": "git",
 	"url": "https://github.com/vscode-devs/vscode-extension-demo.git"
-},
+  },
+  "homepage": "https://github.com/vscode-devs/vscode-extension-demo/blob/master/README.md",
+  "icon": "images/extension.png",
   "engines": {
     "vscode": "^1.100.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": ["*"],
+  "activationEvents": [
+	"vscode-extension-demo.helloWorld"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
