@@ -8,15 +8,15 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "vscode-extension-demo" is now active!');
+	console.log('Congratulations, your extension "vs-code-extensions" is now active!');
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	const disposable = vscode.commands.registerCommand('vscode-extension-demo.helloWorld', () => {
+	const disposable = vscode.commands.registerCommand('vs-code-extensions.helloWorld', () => {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from vscode-extension-demo!');
+		vscode.window.showInformationMessage('Hello World from vs-code-extensions!');
 	});
 
 	// 在 VS Code 界面中创建一个状态栏项
@@ -37,7 +37,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// 将状态栏项与命令关联
 	// 当用户点击状态栏项时，将执行此命令
 	// 命令 ID 必须与 package.json 中定义的一致
-	statusBarItem.command = 'vscode-extension-demo.helloWorld';
+	statusBarItem.command = 'vs-code-extensions.helloWorld';
 	
 	// 使状态栏项在 UI 中可见
 	// 没有这个调用，项目将被创建但不会显示

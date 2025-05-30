@@ -1,5 +1,5 @@
 {
-  "name": "vscode-extension-demo",
+  "name": "vs-code-extensions",
   "displayName": "苏木的VSCode扩展demo",
   "description": "这是一个VSCode扩展的示例。",
   "keywords": ["vscode", "plugin", "demo"],
@@ -7,9 +7,9 @@
   "publisher": "sumu",
   "repository": {
 	"type": "git",
-	"url": "https://github.com/vscode-devs/vscode-extension-demo.git"
+	"url": "https://github.com/vscode-devs/vs-code-extensions.git"
   },
-  "homepage": "https://github.com/vscode-devs/vscode-extension-demo/blob/master/README.md",
+  "homepage": "https://github.com/vscode-devs/vs-code-extensions/blob/master/README.md",
   "icon": "images/extension.png",
   "engines": {
     "vscode": "^1.100.0"
@@ -18,27 +18,27 @@
     "Other"
   ],
   "activationEvents": [
-	"vscode-extension-demo.helloWorld"
+	"vs-code-extensions.helloWorld"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "vscode-extension-demo.helloWorld",
+        "command": "vs-code-extensions.helloWorld",
         "title": "Hello World"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "vscode-extension-demo.helloWorld",
+          "command": "vs-code-extensions.helloWorld",
           "group": "navigation"
         }
       ]
     },
     "keybindings": [
       {
-        "command": "vscode-extension-demo.helloWorld",
+        "command": "vs-code-extensions.helloWorld",
         "key": "ctrl+alt+f10",
         "mac": "cmd+alt+f10",
         "when": "editorTextFocus"
