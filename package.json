@@ -3,14 +3,14 @@
   "displayName": "苏木的VSCode扩展demo",
   "description": "这是一个VSCode扩展的示例。",
   "keywords": ["vscode", "plugin", "demo"],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "ms-vs-extensions",
   "repository": {
 	"type": "git",
 	"url": "https://github.com/vscode-devs/vs-code-extensions.git"
   },
   "homepage": "https://github.com/vscode-devs/vs-code-extensions/blob/master/README.md",
-  "icon": "images/extension.png",
+  "icon": "images/sumu.png",
   "engines": {
     "vscode": "^1.100.0"
   },
