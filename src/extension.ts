@@ -3,6 +3,7 @@
 import * as vscode from 'vscode';
 // 导入 HelloWorld 命令模块
 import { registerHelloWorldCommand } from './commands/helloWorld';
+import { registerCursorPositionCommand } from './commands/getCursorPosition';
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -13,6 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// 注册 HelloWorld 命令
 	registerHelloWorldCommand(context);
+	registerCursorPositionCommand(context);
 }
 
 // This method is called when your extension is deactivated

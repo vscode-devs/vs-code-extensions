@@ -21,18 +21,27 @@
 	"vscode-ext-dev.helloWorld"
   ],
   "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "vscode-ext-dev.helloWorld",
-        "title": "Hello World"
-      }
-    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "vscode-ext-dev.helloWorld",
+                "title": "Hello World"
+            },
+            {
+                "command": "vscode-ext-dev.getCursorPosition",
+                "title": "Get Cursor Position"
+            }
+        ],
     "menus": {
       "editor/context": [
         {
           "command": "vscode-ext-dev.helloWorld",
           "group": "navigation"
+        },
+        {
+          "command": "vscode-ext-dev.getCursorPosition",
+          "group": "navigation",
+          "when": "editorTextFocus"
         }
       ]
     },
