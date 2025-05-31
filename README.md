@@ -1,4 +1,4 @@
-# ms-vs-extensions.vs-code-extensions
+# ms-vs-extensions.vscode-ext-dev
 
 苏木的vscode测试扩展
 

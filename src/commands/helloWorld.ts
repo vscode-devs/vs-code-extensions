@@ -5,7 +5,7 @@ import * as vscode from 'vscode';
  */
 function executeHelloWorldCommand(): void {
     // 显示信息提示
-    vscode.window.showInformationMessage('Hello World from vs-code-extensions!');
+    vscode.window.showInformationMessage('Hello World from vscode-ext-dev!');
 }
 
 /**
@@ -22,7 +22,7 @@ function createStatusBarItem(): vscode.StatusBarItem {
     // 配置状态栏项
     statusBarItem.text = "$(rocket) Hello World";
     statusBarItem.tooltip = "点击运行 Hello World 命令";
-    statusBarItem.command = 'vs-code-extensions.helloWorld';
+    statusBarItem.command = 'vscode-ext-dev.helloWorld';
     
     return statusBarItem;
 }
@@ -34,7 +34,7 @@ function createStatusBarItem(): vscode.StatusBarItem {
 export function registerHelloWorldCommand(context: vscode.ExtensionContext): void {
     // 注册命令
     const disposable = vscode.commands.registerCommand(
-        'vs-code-extensions.helloWorld', 
+        'vscode-ext-dev.helloWorld', 
         executeHelloWorldCommand
     );
     

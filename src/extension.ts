@@ -9,7 +9,7 @@ import { registerHelloWorldCommand } from './commands/helloWorld';
 export function activate(context: vscode.ExtensionContext) {
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "vs-code-extensions" is now active!');
+	console.log('Congratulations, your extension "vscode-ext-dev" is now active!');
 
 	// 注册 HelloWorld 命令
 	registerHelloWorldCommand(context);
